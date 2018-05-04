@@ -1,0 +1,12 @@
+<view class="container" style="background-image: url('../../image/img0.jpg')">
+<view class="times"><text>00:00:00</text></view>
+  <view class="userinfo">
+    <text class="userinfo-nickname2">小测试</text>
+  </view>
+  <view>
+      <image class="userinfo-avatar" src="../../image/logo.jpg" background-size="cover"></image>
+  </view>
+  <view class="usermotto" bindtap='beginttest'>
+    <test class="user-motto">{{motto}}</test>
+  </view>
+</view>

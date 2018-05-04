@@ -1,0 +1,21 @@
+<!-- 弹出设置文字  -->
+<view>
+  <modal title="啊!出错啦!没登录?" hidden="{{modalHidden}}" confirm-text="去登录" cancel-text="算啦" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel"></modal>
+</view>
+
+
+
+
+<view class="container" style="background-image: url('../../image/result.jpg')">
+  <view class="userinfo">
+    <text class="userinfo-nickname2">测试结果</text>
+  </view>
+  <view>
+      <image class="userinfo-avatar" src="../../image/logo.jpg" background-size="cover"></image>
+  </view>
+  <view><text class="texts">用时:  {{time}}</text></view>
+  <view><text class="texts">A:  {{countA}}</text></view>
+  <view><text class="texts">B:  {{countB}}</text></view>
+  <view><text class="texts">C:  {{countC}}</text></view>
+  <button class="buttons" bindtap="toSave">保存结果</button>
+</view>

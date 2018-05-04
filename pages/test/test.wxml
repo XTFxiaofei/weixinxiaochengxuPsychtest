@@ -1,0 +1,45 @@
+<view class="warp" style="background-image: url('../../image/img0.jpg')">
+  <view class="times"><text>{{time}}</text></view>
+
+  <view bindtap='select'>
+    <progress percent="{{per}}" show-info/>
+  </view>
+
+  <!--pages/question/question.wxml-->
+  <view class='outer'>
+    <!--标题  -->
+    <view id='describe'>{{index+1}}、{{title[list[index]]}}</view>
+    <!--选项-->
+    <view id='answer'>
+
+
+
+      <radio-group bindchange='select' bindtap="playmusic">
+
+        <view class="item">
+          <radio value='{{radios[0]}}' checked='{{clear}}'>
+            <text decode='{{true}}'>&nbsp;{{choice[list[index]][radios[0]]}}</text>
+          </radio>
+        </view>
+
+        <view class="item">
+          <radio value='{{radios[1]}}' checked='{{clear}}'>
+            <text decode='{{true}}'>&nbsp;{{choice[list[index]][radios[1]]}}</text>
+          </radio>
+        </view>
+
+        <view class="item">
+          <radio value='{{radios[2]}}' checked='{{clear}}'>
+            <text decode='{{true}}'>&nbsp;{{choice[list[index]][radios[2]]}}</text>
+          </radio>
+        </view>
+      </radio-group>
+    </view>
+    <!--
+    <view wx:if='{{index == 9}}'>
+      <button id='confirm' style='width: 70%; color: rgba(67, 82, 163, 0.9);' bindtap='submit'>提交</button>
+    </view>
+    -->
+  </view>
+
+</view>

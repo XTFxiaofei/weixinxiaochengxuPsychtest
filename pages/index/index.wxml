@@ -1,0 +1,50 @@
+<view class="warp" style="background-image: url('../image/img0.jpg')">
+
+
+ 
+
+  <scroll-view class="scroll1">
+    <view class="text1">小测试</view>
+    <view class="title">{{postList[index].name}}</view>
+    <view hidden="{{ny}}">{{postList[index].daan}}</view>
+  </scroll-view>
+  <scroll-view>
+    <view wx:if="{{pages<10}}">
+          
+      <button id='A' bindtap="btnOpClick" style="background-color: {{bcA}};">
+        <text class="text-size">{{postList[index].content[0]}}</text>
+      </button>
+      <button id='C' bindtap="btnOpClick" style="background-color: {{bcC}};">
+        <text class="text-size">{{postList[index].content[1]}}</text>
+      </button>
+      <button id='B' bindtap="btnOpClick" style="background-color: {{bcB}};">
+        <text class="text-size">{{postList[index].content[2]}}</text>
+      </button>
+    </view>
+    <view wx:else>
+      <button id='A' bindtap="btnOpClick" style="background-color: {{bcA}};">
+        <text class="text-size">{{postList[index].content[0]}}</text>
+      </button>
+      <button id='B' bindtap="btnOpClick" style="background-color: {{bcB}};">
+        <text class="text-size">{{postList[index].content[1]}}</text>
+      </button>
+      <button id='C' bindtap="btnOpClick" style="background-color: {{bcC}};">
+        <text class="text-size">{{postList[index].content[2]}}</text>
+      </button>
+    </view>
+  </scroll-view>
+  <!-- 
+<button class="button-style" bindtap="lastQuestion" >上一题</button>
+<button class="button-style" bindtap="nextQuestion">下一题</button>
+<button bindtap="xianshi">显示答案</button>
+<text>积分：每答对一题积2分，目前得分{{defen}}</text>
+-->
+
+  <view class="choose">
+    <text class="title">你已经选择A:{{countA}}  ,B:{{countB}},  C:{{countC}}  </text>
+  </view>
+
+  <view wx:if="{{lastpage>0}}">
+    <button bindtap="gotonext" class="button-style">提交</button>
+  </view>
+</view>

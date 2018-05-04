@@ -1,0 +1,80 @@
+/**index.wxss**/
+.text-size{
+  font-size: 16px;
+  float:left;
+  text-align: left;
+}
+.button-style{
+  color:aqua;
+}
+
+
+
+page {
+    height: 100%;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+button{
+  width: 90%;
+}
+
+
+
+button{
+  margin-top:20px;
+
+}
+
+.warp{
+ 
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.title{
+   
+margin-top:20px;
+font-weight:bold;
+}
+
+.text1{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:10px;
+}
+
+
+button text {
+  vertical-align:left;
+  display: table-cell;
+}
