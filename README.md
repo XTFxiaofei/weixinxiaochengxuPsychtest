@@ -6,3 +6,5 @@
 
 
 <h1>测试结构截图<h1/><br/>
+
+![Image text](https://github.com/XTF1182741213/weixinxiaochengxuPsychtest/blob/master/1525436110(1).jpg)
